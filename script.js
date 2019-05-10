@@ -113,7 +113,11 @@ var navigation = new Vue({
     ]
   },
   methods: {
-    toggleChildren(category) {
+    toggleChildren(category, event) {
+      event.currentTarget.setAttribute(
+        "aria-expanded",
+        (!category.showChildren).toString()
+      );
       category.showChildren = !category.showChildren;
     }
   }
