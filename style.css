@@ -16,13 +16,12 @@ ul {
 }
 
 #navigation {
-    margin-left: 0;
     padding: 0;
 }
 
 .category-container {
     display: flex;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
 }
 
 .category {
@@ -32,11 +31,15 @@ ul {
 }
 
 i {
-    margin-left: 5px;
+    margin: 0 0 0 5px;
 }
 
 .category-title {
     margin: 0 0 0 5px;
+}
+
+.link {
+    margin: 15px 0 0 0;
 }
 
 a {
