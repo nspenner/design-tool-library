@@ -23,7 +23,15 @@
       <ul id="navigation">
         <li v-for="category in categories">
           <div class="category-container">
-            <span class="category" v-on:click="toggleChildren(category)">
+            <span
+              class="category"
+              v-on:click="toggleChildren(category, $event)"
+              v-on:keyup.enter="toggleChildren(category, $event)"
+              v-on:keyup.space="toggleChildren(category, $event)"
+              role="button"
+              aria-expanded="false"
+              tabindex="0"
+            >
               <i
                 v-bind:class="[category.showChildren ? 'fa-caret-down' : 'fa-caret-right', 'fas fa-fw']"
               ></i>

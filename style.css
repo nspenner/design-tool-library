@@ -1,47 +1,52 @@
 body {
-    margin: 0;
-    color: white;
-    background-color: #3E3E3E;
-    font-family: "Lato", Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: white;
+  background-color: #3e3e3e;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    font-family: "Heebo", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border-bottom: 2px solid white;
-    margin: 10px 30px;
+  font-family: "Heebo", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  border-bottom: 2px solid white;
+  margin: 10px 30px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #navigation {
-    padding: 0;
+  padding: 0;
 }
 
 .category-container {
-    display: flex;
-    margin: 20px 0 0 0;
+  display: flex;
+  margin: 20px 0 0 0;
 }
 
 .category {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.category:focus {
+  outline: 1px solid white;
 }
 
 i {
-    margin: 0 0 0 5px;
+  margin: 0 0 0 5px;
 }
 
 .category-title {
-    margin: 0 0 0 5px;
+  margin: 0 0 0 5px;
 }
 
 .link {
-    margin: 15px 0 0 0;
+  margin: 15px 0 0 0;
 }
 
 a {
-    color: cyan;
+  color: cyan;
 }
