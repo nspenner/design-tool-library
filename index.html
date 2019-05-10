@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web Design Tools</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>WEB DESIGN TOOLS LIBRARY</h1>
+    <nav>
+      <ul id="navigation">
+        <li v-for="category in categories">
+          <div v-on:click="toggleChildren(category)" class="category">
+            <i v-bind:class="[category.showChildren ? 'fa-caret-down' : 'fa-caret-right', 'fas fa-fw']"></i>
+            <h2 class="category-title">
+              {{ category.title }}
+            </h2>
+          </div>
+          <ul v-if="category.showChildren" id="category-links">
+            <li v-for="link in category.links">
+              <a
+                v-bind:href="link.URI"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ link.name }}</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main></main>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="script.js"></script>

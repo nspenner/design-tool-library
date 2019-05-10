@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    color: white;
+    background-color: #3E3E3E;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: "Staatliches", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 2px solid white;
+    margin: 10px 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#navigation {
+    margin-left: 0;
+    padding: 0;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+i {
+    margin-left: 15px;
+}
+
+.category-title {
+    margin-left: 10px;
+}
+
+a {
+    color: cyan;
+}
