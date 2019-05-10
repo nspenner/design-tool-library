@@ -53,6 +53,16 @@ var navigation = new Vue({
         showChildren: false
       },
       {
+        title: "CSS Frameworks and Stylesheets",
+        links: [
+          {
+            name: "Water.css Minimal Stylesheet",
+            URI: "https://kognise.github.io/water.css/"
+          }
+        ],
+        showChildren: false
+      },
+      {
         title: "Icons",
         links: [
           {
