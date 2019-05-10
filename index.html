@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Web Design Tools</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Lato|Staatliches"
+      href="https://fonts.googleapis.com/css?family=Lato|Heebo:800"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -18,18 +18,22 @@
     />
   </head>
   <body>
-    <h1>WEB DESIGN TOOLS LIBRARY</h1>
+    <h1>WEB DESIGN TOOLS</h1>
     <nav>
       <ul id="navigation">
         <li v-for="category in categories">
-          <div v-on:click="toggleChildren(category)" class="category">
-            <i v-bind:class="[category.showChildren ? 'fa-caret-down' : 'fa-caret-right', 'fas fa-fw']"></i>
-            <h2 class="category-title">
-              {{ category.title }}
-            </h2>
+          <div class="category-container">
+            <span class="category" v-on:click="toggleChildren(category)">
+              <i
+                v-bind:class="[category.showChildren ? 'fa-caret-down' : 'fa-caret-right', 'fas fa-fw']"
+              ></i>
+              <h2 class="category-title">
+                {{ category.title }}
+              </h2>
+            </span>
           </div>
           <ul v-if="category.showChildren" id="category-links">
-            <li v-for="link in category.links">
+            <li class="link" v-for="link in category.links">
               <a
                 v-bind:href="link.URI"
                 target="_blank"

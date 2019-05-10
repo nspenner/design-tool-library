@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    font-family: "Staatliches", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Heebo", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-bottom: 2px solid white;
     margin: 10px 30px;
 }
@@ -20,6 +20,11 @@ ul {
     padding: 0;
 }
 
+.category-container {
+    display: flex;
+    margin-top: 15px;
+}
+
 .category {
     display: flex;
     align-items: center;
@@ -27,11 +32,11 @@ ul {
 }
 
 i {
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 .category-title {
-    margin-left: 10px;
+    margin: 0 0 5px 0;
 }
 
 a {
