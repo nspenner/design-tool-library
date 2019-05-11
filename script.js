@@ -126,6 +126,15 @@ var navigation = new Vue({
       }
     ]
   },
+  mounted() {
+    if (localStorage.categories) {
+      try {
+        this.categories = JSON.parse(localStorage.getItem("categories"));
+      } catch (e) {
+        localStorage.removeItem("categories");
+      }
+    }
+  },
   methods: {
     toggleChildren(category, event) {
       event.currentTarget.setAttribute(
@@ -133,6 +142,7 @@ var navigation = new Vue({
         (!category.showChildren).toString()
       );
       category.showChildren = !category.showChildren;
+      localStorage.categories = JSON.stringify(this.categories);
     }
   }
 });
