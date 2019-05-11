@@ -15,11 +15,17 @@ var navigation = new Vue({
           },
           {
             name: "Web AIM Color Contrast Checker",
-            URI: "https://webaim.org/resources/contrastchecker/"
+            description:
+              "Checks contrast level of colors to ensure they meet accessibility standards.",
+            URI: "https://webaim.org/resources/contrastchecker/",
+            img: "images/color_contrast_checker.png"
           },
           {
             name: "Web AIM Link Contrast Checker",
-            URI: "https://webaim.org/resources/linkcontrastchecker/"
+            description:
+              "Checks contrast level of links compared to background and surrounding text color to ensure they meet accessibility standards.",
+            URI: "https://webaim.org/resources/linkcontrastchecker/",
+            img: "images/link_contrast_checker.png"
           }
         ],
         showChildren: false
@@ -133,6 +139,20 @@ var navigation = new Vue({
         (!category.showChildren).toString()
       );
       category.showChildren = !category.showChildren;
+    },
+    updatePreview(link) {
+      var preview = document.getElementById("preview");
+      var p = preview.children[0];
+      var img = preview.children[1];
+      p.innerHTML = link.description;
+      img.setAttribute("src", link.img);
+      img.setAttribute("alt", `An image preview of ${link.name}.`);
+    },
+    clearPreview() {
+      var preview = document.getElementById("preview");
+      preview.children[0].innerHTML = "";
+      preview.children[1].setAttribute("src", "");
+      preview.children[1].setAttribute("alt", "");
     }
   }
 });

@@ -22,7 +22,10 @@
     />
   </head>
   <body>
-    <h1>WEB DESIGN TOOLS</h1>
+    <header>
+      <h1>WEB DESIGN TOOLS</h1>
+    </header>
+
     <nav>
       <ul id="navigation">
         <li v-for="category in categories">
@@ -50,6 +53,8 @@
                 v-bind:href="link.URI"
                 target="_blank"
                 rel="noopener noreferrer"
+                v-on:mouseover="updatePreview(link)"
+                v-on:mouseleave="clearPreview()"
                 >{{ link.name }}</a
               >
             </li>
@@ -58,7 +63,10 @@
       </ul>
     </nav>
 
-    <main></main>
+    <main id="preview">
+      <p></p>
+      <img src="" alt="" />
+    </main>
   </body>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>

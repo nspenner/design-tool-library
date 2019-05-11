@@ -1,8 +1,23 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   color: white;
   background-color: #3e3e3e;
   font-family: "Lato", Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas:
+    "header header"
+    "nav main";
+  height: 100%;
+}
+
+header {
+  grid-area: header;
 }
 
 h1 {
@@ -14,6 +29,11 @@ h1 {
 
 ul {
   list-style-type: none;
+}
+
+nav {
+  grid-area: nav;
+  overflow: scroll;
 }
 
 #navigation {
@@ -47,4 +67,14 @@ i {
 
 a {
   color: cyan;
+}
+
+main {
+  grid-area: main;
+  margin: 0 0 0 15px;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
 }
