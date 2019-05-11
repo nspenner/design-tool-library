@@ -46,5 +46,9 @@ i {
 }
 
 a {
-  color: cyan;
+  color: #00ffff;
+}
+
+footer {
+  font-size: 0.75rem;
 }
