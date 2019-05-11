@@ -25,6 +25,20 @@ var navigation = new Vue({
         showChildren: false
       },
       {
+        title: "Analytics and Testing",
+        links: [
+          {
+            name: "web.dev Website Best-Practices Tester",
+            URI: "https://web.dev/"
+          },
+          {
+            name: "Google Analytics",
+            URI: "https://marketingplatform.google.com/about/analytics/"
+          }
+        ],
+        showChildren: false
+      },
+      {
         title: "Art and Illustration",
         links: [
           {
