@@ -62,6 +62,10 @@ var navigation = new Vue({
           {
             name: "culrs.com Pre-generated Palettes",
             URI: "https://culrs.com/"
+          },
+          {
+            name: "sessions.edu Color Wheel",
+            URI: "https://www.sessions.edu/color-calculator/"
           }
         ],
         showChildren: false
