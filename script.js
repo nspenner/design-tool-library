@@ -131,14 +131,21 @@ var navigation = new Vue({
     ]
   },
   mounted() {
-    if (localStorage.categories) {
-      try {
-        this.categories = JSON.parse(localStorage.getItem("categories"));
-      } catch (e) {
-        localStorage.removeItem("categories");
-      }
-    }
-  },
+  //   if (localStorage.categories) {
+  //     try {
+  //       var categories = JSON.parse(localStorage.getItem("categories"));
+  //       console.log(categories.length);
+  //       console.log(this.categories.length);
+  //       if (categories.length == this.categories.length) {
+  //         this.categories = categories;
+  //       } else {
+  //         localStorage.removeItem("categories");
+  //       }
+  //     } catch (error) {
+  //       localStorage.removeItem("categories");
+  //     }
+  //   }
+  // },
   methods: {
     toggleChildren(category, event) {
       event.currentTarget.setAttribute(
