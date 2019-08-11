@@ -46,6 +46,10 @@ var navigation = new Vue({
             URI: "https://lukaszadam.com/illustrations"
           },
           {
+            name: "Mixkit Art",
+            URI: "https://mixkit.co/art/"
+          },
+          {
             name: "Undraw Illustrations",
             URI: "https://undraw.co/illustrations"
           }
@@ -55,6 +59,10 @@ var navigation = new Vue({
       {
         title: "Color",
         links: [
+          {
+            name: "cssgradient.io Gradient Background Generator",
+            URI: "https://cssgradient.io/"
+          },
           {
             name: "coolors.co Palette Generator",
             URI: "https://coolors.co/"
@@ -107,6 +115,7 @@ var navigation = new Vue({
       {
         title: "Stock Photos and Images",
         links: [
+          { name: "Mixkit Videos", URI: "https://mixkit.co/category/" },
           {
             name: "Unsplash Free Photos",
             URI: "https://unsplash.com/"
@@ -124,6 +133,10 @@ var navigation = new Vue({
           {
             name: "Google Fonts",
             URI: "https://fonts.google.com/"
+          },
+          {
+            name: "Typewolf – What's Trending in Type",
+            URI: "https://www.typewolf.com"
           }
         ],
         showChildren: false
